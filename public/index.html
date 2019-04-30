@@ -5,25 +5,33 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script src="js/offboard.js" type="text/javascript"></script>
     <link rel="stylesheet" type="text/css" href="css/master.css">
-    <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
 
     <title>CVS Users</title>
 </head>
 
 <body>
-    <form action="http://localhost:4200/api/user" method="post" id="my_form">
-        <label>Forename</label>
-        <input type="text" name="firstName" />
-        <label>Surname</label>
-        <input type="text" name="lastName" />
-        <label>Username</label>
-        <input type="text" name="username" />
-        <label>E-mail</label>
-        <input type="email" name="email" />
-        <input type="submit" name="submit" onclick="confirmChoiceOn()" value="Onboard user" />
-        <div id="server-results">
-        </div>
-        <div id="showData"></div>
+    <div id="content">
+        <h1>Onboarding/Offboarding</h1>
+        <img src="images/Driver_&_Vehicle_Standards_Agency_Logo.png"><br><br>
+        <form action="http://localhost:4200/api/user" method="post" id="my_form">
+            <label>Forename</label>
+            <input type="text" name="firstName" />
+            <label>Surname</label>
+            <input type="text" name="lastName" />
+            <label>Username</label>
+            <input type="text" name="username" />
+            <label>E-mail</label>
+            <input type="email" name="email" />
+            <input type="submit" name="submit" onclick="confirmChoiceOn()" value="Onboard user" />
+            <div id="server-results">
+            </div><br><br>
+            <div id="showData"></div>
+    </div>
+    <br></br>
+    <hr>
+    <img src="images/onboarding_offboarding.png" style="width: 50%;">
+
     </form>
 </body>
 
